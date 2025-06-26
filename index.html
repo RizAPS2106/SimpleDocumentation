@@ -288,7 +288,7 @@
 
                                 <img src="images/upload/nds.png" alt="portal picture" class="img-responsive img-thumbnail" target="_blank">
 
-                                <p><b>NDS</b>, yes it is the main program on the NDS Project. It's quite a long-term project. It's really hard to get it done, you may want to fix the bugs first so you can develop it easier after. Do make some tools that could help you or maybe someone else to fix the false input or some kind of that. The modules included in this app is somewhere around :</p>
+                                <p><b>NDS</b>, yes it is the main program on the NDS Project. It's quite a long-term project. It's really hard to get it done, you may want to fix the bugs first so you can develop it easier after. Do make some tools that could help you or maybe someone else to fix the false input. The modules included on this app is somewhere around :</p>
                                 
                                 <ol>
                                     <li>Marker</li>
@@ -381,7 +381,7 @@
                         <!-- <hr> -->
 
                         <p>
-                            <b>Database Structure</b>, how can i say it. Let's say it just ain't right. A lot of redundant column. Multi-database relation. No actual relationship. Currently you will <b>rarely found an actual API usage even thought it could help so much to synchronize multi database relation or any complex relation</b>, since there are no actual database relationship therefore <b>we couldn't cascade</b> any update or delete. Yes it is quite <b>dangerous</b>. So make sure you do your trial & error things on local server first and always backup everything before you do some critical update.
+                            <b>Database Structure</b>, how can i say it. Let's say it just ain't right. A lot of redundant column. Cross-database synchronization. No keys. Currently you will <b>rarely found an actual API usage even thought it could help so much to synchronize cross-database relation or any complex relation</b>, since there are no actual database relationship therefore <b>we couldn't cascade</b> any update or delete. Yes it is quite <b>dangerous</b>. So make sure you do your trial & error things on local server first and always backup everything before you do some critical update.
                         </p>
 
                         <h4>SignalBit</h4>
@@ -411,7 +411,7 @@
                         </p>
 
                         <p>
-                            Enough with my overshare, let's just check the database structure of <b>laravel_nds</b> :
+                            Let's just check the database structure of <b>laravel_nds</b> :
                         </p>
                         <img src="images/upload/NDS ERD.png" alt="nds erd" class="img-responsive img-thumbnail">
 
@@ -422,7 +422,7 @@
                         <br>
 
                         <p>
-                            Well? Ain't it rough enough? There are actually more of them on this database, but i am helped by my partners, they know better about the untolds from me. I hope this could help you enough to reconstruct the database structure for the better fundamentals.
+                           There are actually more of them on this database, but i am helped by my partners, they know better about the untolds from me. I hope this could help you enough to reconstruct the database structure for the better fundamentals.
                         </p>
 
                         <hr>
@@ -610,7 +610,7 @@
                                 <br>
 
                                 <p>
-                                    As you can see, the url is kinda different from the usual Laravel Project. The database configuration is also has more than one database server. The <code>ENV</code> is still local because it still in development, and that's why the <code>APP_DEBUG</code> is still true, in case something unexpected happens. It use <code>REDIS</code> as well, the config is on <code>BROADCAST_DRIVER to REDIS_PORT</code>. It has <code>LARAVEL_ECHO_PORT</code> too, for listener. The other config will comes later
+                                    As you can see, the url is kinda different from the usual Laravel Project. The database configuration is also has more than one database server. The <code>ENV</code> is still local because it still in development, and that's why the <code>APP_DEBUG</code> is still true, in case something unexpected happens. It use <code>REDIS</code> as well, the config is on <code>BROADCAST_DRIVER to REDIS_PORT</code>. It has <code>LARAVEL_ECHO_PORT</code> too, for listener.
                                 </p>
 
                                 <!-- <div class="text-center">
@@ -1215,7 +1215,7 @@
                                         </div>
                                     @endrole
                                 </pre>
-                                <p>As <code>@role('accessName')</code> as where you define the access that could see your limited-access elements.</p>
+                                <p>As <code>@role('accessName')</code> as where you define the access that could see your stricted elements.</p>
 
                                 <br>
 
@@ -1258,7 +1258,7 @@
                                         }
                                     }
                                 </pre>
-                                <p>That was putted on <code>app\Http\Livewire</code>. You should never put big data collections on this one. But if you actually should, then use <b>raw query</b> to achieve it, so it could be a simple array data without any additional attribute.</p> 
+                                <p>That was putted on <code>app\Http\Livewire</code>. You should never put big data collections on this one. But if you actually should, then use <b>raw query</b> to achieve it, so it would be a simple array data without any additional attribute.</p> 
                                 <br>
                                 <p>As for the views on <code>resources\views\livewire</code>. Example : </p>
                                 <pre class="brush: html">
@@ -1327,7 +1327,7 @@
                                 </p>
                             </div>
 
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
                                 <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
                                         src="images/upload/thumbnail.png" alt=""
                                         class="img-responsive img-thumbnail"></a>
@@ -1340,10 +1340,10 @@
                                     <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- end col -->
 
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
                                 <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
                                         src="images/upload/thumbnail.png" alt=""
                                         class="img-responsive img-thumbnail"></a>
@@ -1358,10 +1358,10 @@
                                     <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- end col -->
 
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
                                 <a href="upload/thumbnail.png" data-rel="prettyPhoto"><img
                                         src="images/upload/thumbnail.png" alt=""
                                         class="img-responsive img-thumbnail"></a>
@@ -1376,7 +1376,7 @@
                                     <li><strong>Step 3</strong> - Lorem the It is a long established fact that a read.
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- end col -->
 
                         </div>
